@@ -5,7 +5,7 @@ import Logo from "../Assets/Images/Logo.png";
 import { AppBar, Toolbar, IconButton, Button } from "@mui/material";
 import FCP from "../Assets/Images/FCP.png";
 
-const Navbar = () => {
+const Navbar = ({ title }) => {
   return (
     <AppBar position="static" sx={{ bgcolor: "#000" }}>
       <Toolbar>
@@ -19,8 +19,13 @@ const Navbar = () => {
         >
           <img src={Logo} className="logo" />
         </IconButton>
-        <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-          Armoniam
+        <Typography
+          src={title}
+          variant="h4"
+          component="div"
+          sx={{ flexGrow: 1 }}
+        >
+          {title}
         </Typography>
         <Link href="#Tech">
           <img src={FCP} className="logo" />

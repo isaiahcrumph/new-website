@@ -53,3 +53,11 @@ a {
   margin-top: 0px;
 
 }
+
+@media screen and (max-width:1633px) {
+
+  .hero-banner-img {
+    display: none;
+  }
+
+}

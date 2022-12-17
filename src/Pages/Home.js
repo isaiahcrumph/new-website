@@ -1,11 +1,11 @@
-import { Box } from "@mui/material";
+import { Box, ListItemSecondaryAction } from "@mui/material";
 import React from "react";
 import HeroBanner from "../Components/HeroBanner";
 
-const Home = () => {
+const Home = ({ greetingsText }) => {
   return (
     <Box>
-      <HeroBanner />
+      <HeroBanner greetingsText={greetingsText} />
     </Box>
   );
 };
