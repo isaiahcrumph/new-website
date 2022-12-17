@@ -16,7 +16,12 @@ const greetingsText = (
   </Typography>
 );
 
-const title = "Armoniam";
+const title = (
+  <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+    F.C.P <br />
+    Technologies
+  </Typography>
+);
 
 function App() {
   return (

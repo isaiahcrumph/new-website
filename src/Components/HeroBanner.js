@@ -23,7 +23,7 @@ const HeroBanner = ({ greetingsText }) => {
           ml: { lg: "40px", xs: "10px" },
           bgcolor: "#063970",
         }}
-        position
+        position="responsive"
       >
         Projects
       </Button>

@@ -7,33 +7,31 @@ import FCP from "../Assets/Images/FCP.png";
 
 const Navbar = ({ title }) => {
   return (
-    <AppBar position="fixed" sx={{ bgcolor: "#063970" }}>
+    <AppBar sx={{ bgcolor: "#063970" }}>
       <Toolbar>
         <IconButton
           size="large"
-          edge="start"
+          // edge="start"
           color="inherit"
           aria-label="logo"
           p="300px"
-          sx={{ ml: { sm: "250px" } }}
+          // sx={{ ml: { sm: "250px" } }}
         >
-          <img src={Logo} className="logo" />
+          <img
+            src={FCP}
+            href="#Tech"
+            className="logo"
+            position="responsive"
+            alt="/"
+          />
         </IconButton>
-        <Typography
-          src={title}
-          variant="h4"
-          component="div"
-          sx={{ flexGrow: 1 }}
-        >
-          {title}
-        </Typography>
-        <Link href="#Tech">
-          <img src={FCP} className="logo" position="responsive" />
-        </Link>
+
+        {title}
+
         <Stack
           direction="row"
           spacing={2}
-          sx={{ mr: { sm: "250px" }, ml: { sm: "250px" } }}
+          // sx={{ mr: { sm: "250px" }, ml: { sm: "250px" } }}
         >
           <Button color="inherit">Features</Button>
           <Button color="inherit">Pricing</Button>
