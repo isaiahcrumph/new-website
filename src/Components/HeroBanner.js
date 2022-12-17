@@ -10,10 +10,11 @@ const HeroBanner = () => {
       p="20px"
     >
       <Typography color="white" variant="h2">
-        Prem Web-Dev for Pros
+        Web <br />
+        Development <br /> Company
       </Typography>
       <Typography color="white" variant="h5">
-        Look at our work
+        Take a look at our work
       </Typography>
       <Button />
 
