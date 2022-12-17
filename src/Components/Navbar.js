@@ -7,7 +7,7 @@ import FCP from "../Assets/Images/FCP.png";
 
 const Navbar = ({ title }) => {
   return (
-    <AppBar position="static" sx={{ bgcolor: "#000" }}>
+    <AppBar position="fixed" sx={{ bgcolor: "#063970" }}>
       <Toolbar>
         <IconButton
           size="large"
@@ -28,9 +28,13 @@ const Navbar = ({ title }) => {
           {title}
         </Typography>
         <Link href="#Tech">
-          <img src={FCP} className="logo" />
+          <img src={FCP} className="logo" position="responsive" />
         </Link>
-        <Stack direction="row" spacing={2} sx={{ mr: { sm: "250px" } }}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{ mr: { sm: "250px" }, ml: { sm: "250px" } }}
+        >
           <Button color="inherit">Features</Button>
           <Button color="inherit">Pricing</Button>
           <Button color="inherit">About</Button>

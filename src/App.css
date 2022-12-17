@@ -54,10 +54,13 @@ a {
 
 }
 
-@media screen and (max-width:1633px) {
+@media screen and (max-width:1677px) {
 
   .hero-banner-img {
     display: none;
   }
 
+  .greetingsText{
+   position: center;
+  }
 }

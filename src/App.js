@@ -7,7 +7,11 @@ import Home from "./Pages/Home";
 import TechDetail from "./Pages/TechDetail";
 
 const greetingsText = (
-  <Typography color="white" variant="h2">
+  <Typography
+    color="white"
+    variant="h2"
+    sx={{ ml: { lg: "40px", xs: "10px" } }}
+  >
     Web <br /> Development Company
   </Typography>
 );
