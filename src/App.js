@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./Components/Footer";
 import HeroBanner from "./Components/HeroBanner";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
@@ -17,13 +18,17 @@ const greetingsText = (
 );
 
 const title = (
-  <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+  <Typography
+    variant="h4"
+    component="div"
+    sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+  >
     F.C.P <br />
     Technologies
   </Typography>
 );
 
-function App() {
+const App = () => {
   return (
     <Box>
       <Navbar title={title} />
@@ -31,8 +36,9 @@ function App() {
         <Route path="/" element={<Home greetingsText={greetingsText} />} />
         <Route path="/tech/:id" element={<TechDetail />} />
       </Routes>
+      <Footer />
     </Box>
   );
-}
+};
 
 export default App;

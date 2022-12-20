@@ -64,3 +64,25 @@ a {
    position: center;
   }
 }
+
+  .stack {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    
+  }
+
+.stack-button {
+  display: none; /* hide the button at wider widths */
+}
+
+@media (max-width: 780px) {
+  .stack-button {
+    display: block; /* show the button at narrower widths */
+  }
+}
+
+/* show the stack when the .show class is applied */
+.stack.show {
+  display: block;
+}
