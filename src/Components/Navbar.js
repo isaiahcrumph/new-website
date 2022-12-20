@@ -13,11 +13,7 @@ const StyledToolbar = styled(Toolbar)({
 
 const Navbar = ({ title }) => {
   return (
-    <AppBar
-      justifyContent="space-arround"
-      position="static"
-      sx={{ bgcolor: "#063970" }}
-    >
+    <AppBar position="static" sx={{ bgcolor: "#063970" }}>
       <StyledToolbar>
         <IconButton
           // size="large"

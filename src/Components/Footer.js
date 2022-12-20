@@ -5,14 +5,25 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <Box>
+      <Box
+        position="relative"
+        bottom={0}
+        width="100%"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        elevation={3}
+      >
         <Container maxWidth="lg">
           <Grid container spaceing={5}></Grid>
           <Grid item xs={12} sm={4}>
-            <Box borderBottom={1}> Help</Box>
-            <Box>
-              <Link href="/" color="inherit">
+            <Box borderTop={1} borderColor="#fff">
+              <Link href="/" color="#fff" variant="h4" sx={{ mr: "20px" }}>
                 Home
+              </Link>
+
+              <Link href="/" color="#fff" variant="h4">
+                Help
               </Link>
             </Box>
           </Grid>
